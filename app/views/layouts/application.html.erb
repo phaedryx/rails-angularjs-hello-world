@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Rails/AngularJS Hello World</title>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="App">
 
   <%= yield %>
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
 </body>
 </html>
